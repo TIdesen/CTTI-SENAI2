@@ -1,0 +1,37 @@
+
+
+
+#include <iostream>
+using namespace std;
+
+
+int main(){
+	
+	double salario,horastrabalhadas,valor,IR,INSS,FGTS,descontos;
+	
+	cout << "Informe suas horas trabalhas no mes: " << "/n";
+	cin >> horastrabalhadas;
+	cout << "Qual é o valor da SUA hora de trabalho: "<<  "/n";
+	cin >> valor;
+	
+	salario = horastrabalhadas*valor;
+	
+	IR = salario*5/100;
+	INSS = salario*10/100;
+	FGTS = salario*11/100;
+	
+	descontos = ir+inss;
+	
+	cout << "(-) IR (5%)     "<< " R$ " << IR <<  "/n";
+	cout << "(-) INSS (10%)   " << " R$ "<< INSS <<  "/n";
+	cout << "FGTS (11%)     " << " R$ " << FGTS <<  "/n";
+	cout << "Total de descontos  " <<" R$ "<< descontos <<  "/n";
+	cout << "Salario liquido     " << "R$ "<<salario-descontos <<  "/n /n";
+
+        cout << "Finalizado.";
+	
+	
+	
+	
+	return 0;
+}
